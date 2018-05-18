@@ -1,0 +1,6 @@
+<!-- ./src/app/music/music-channels/music-channels.component.html -->
+<select class="text" (onSelect)="select($event)">
+  <option *ngFor="let channel of channels" value= {{channel.id}}>
+    {{channel.name}}
+  </option>
+</select>
